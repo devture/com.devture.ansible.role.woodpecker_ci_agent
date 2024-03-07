@@ -21,6 +21,7 @@ ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
 			--network={{ devture_woodpecker_ci_agent_container_network }} \
 			--env-file={{ devture_woodpecker_ci_agent_base_path }}/env \
 			--mount type=bind,src={{ devture_woodpecker_ci_agent_docker_socket_path }},dst=/var/run/docker.sock \
+			--mount type=bind,src={{ devture_woodpecker_ci_agent_data_dir_path }},dst=/data \
 			--tmpfs=/tmp:rw,noexec,nosuid,size=128m \
 			{{ devture_woodpecker_ci_agent_container_image }}
 

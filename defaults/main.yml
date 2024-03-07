@@ -16,6 +16,7 @@ devture_woodpecker_ci_agent_container_image_force_pull: "{{ devture_woodpecker_c
 devture_woodpecker_ci_agent_container_image_registry_prefix: docker.io/
 
 devture_woodpecker_ci_agent_base_path: "/{{ devture_woodpecker_ci_agent_identifier }}"
+devture_woodpecker_ci_agent_data_dir_path: "{{ devture_woodpecker_ci_agent_base_path }}/data"
 
 devture_woodpecker_ci_agent_docker_socket_path: /var/run/docker.sock
 
