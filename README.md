@@ -1,5 +1,7 @@
 # Woodpecker CI Agent Ansible role
 
+⚠️ **WARNING**: this role is now maintained in [mother-of-all-self-hosting/ansible-role-woodpecker-ci-agent](https://github.com/mother-of-all-self-hosting/ansible-role-woodpecker-ci-agent).
+
 This is an [Ansible](https://www.ansible.com/) role which installs the **agent** component of [Woodpecker CI](https://woodpecker-ci.org/) to run as a [Docker](https://www.docker.com/) container wrapped in a systemd service.
 
 This role *implicitly* depends on [`com.devture.ansible.role.systemd_docker_base`](https://github.com/devture/com.devture.ansible.role.systemd_docker_base).
